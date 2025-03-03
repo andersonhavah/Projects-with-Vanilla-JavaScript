@@ -2,24 +2,64 @@
 <html lang="en">
 
 <!-- The head of the page -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Meta description, author, etc. -->
+    <meta name="description" content="A form Validator built with HTML, CSS, and JavaScript. It validates the form fields and displays an error message if the fields are empty.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Anderson Havah">
+    <meta name="title" content="Form Validator">
+
     <!-- The link to the CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
     <link rel="stylesheet" href="style.css">
 
     <!-- The title of the page -->
     <title>Form Validator</title>
+
+    <!-- Using Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <!-- The body -->
+
 <body>
     <!-- The containter of the form -->
     <div class="container">
+        <form id="form" class="form">
+            <h2>Register With Us</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <small>Error message</small>
+            </div>
 
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Enter password again">
+                <small>Error message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <script src="script.js"></script>
